@@ -1,69 +1,33 @@
-import React, { Component } from 'react';
-import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
-
-import "../Components/Header.css";
-import logo from './mono.png';
-import '../Components/Toggle.css'
+import React, {Component} from 'react';
+import "../css/Header.css";
+import {Container, Nav, Navbar} from 'react-bootstrap';
+import logo from "../mono.png"
+import {Link} from "react-scroll";
 
 export default class Header extends Component {
     render() {
-       
         return (
-            
-            <Router>    
-    {/* Toggle  */}
-<div className="navbar" >
-<nav role="navigation">
-    
-<div id="menuToggle"> 
-<input type="checkbox" />
-<span></span>
-<span></span>
-<span></span>
-
-<ul id="menu">
-<h1 className="mini-menu-tittle">Меню</h1>
-<li><Link to={"/"} active={{color:"red"}}>Головна</Link></li>
-<li><Link to={"/about"}>Про мене</Link></li>
-<li><Link to={"/event"}>Події</Link></li>
-<li><Link to={"/contacts"}>Контакти</Link></li>
-
-</ul>
-</div>
-</nav>
-           {/* navbar */}
-                    <div className="navbar-header">
-                    <img 
+            <Navbar collapseOnSelect sticky="top" expand="md" variant="light" className="nav-bar">
+                <Container className="nav-bar-container">
+                    <Navbar.Brand href="/">
+                        <img
                             src={logo}
-                            height="100%"
-                            width="15%"
-                        
-                            alt="logo"
-                        /> 
-                       
-                       
-                        <ul className="nav navbar-nav">
-                            <li><Link to={"/"} >Портфоліо</Link></li>
-                            <li><Link to={"/about"}>Про нас</Link></li>
-                            <li><Link to={"/event"}>Розробка</Link></li>
-                            <li><Link to={"/contacts"}>Контакти</Link></li>
-                        </ul>
-                        
-                    
-                                
-                    </div>
-                  {/* Toggle end   */}
-                </div>
-                    {/* <Switch>
-                        <Route exact={true} path="/" component={Home} />
-                        <Route exact={true} path="/about" component={About} />
-                         
-                        <Route exact={true} path="/contacts" component={Contacts} />
-                        <Route exact={true} path="/groupLessons" component={Blog} />
-                        <Redirect from='/event' to='/groupLessons'/>
-                    </Switch> */}
-                      </Router>
-            
+                            className="d-inline-block align-top nav-logo"
+                            alt="Logo"
+                        />
+                    </Navbar.Brand>
+                    <Navbar.Toggle className="toggle" aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Collapse>
+                        <Nav className="nav-links">
+                            <Link className="header-nav-menu">Меню</Link>
+                            <Link className="header-nav-link">Портфоліо</Link>
+                            <Link className="header-nav-link">Про нас</Link>
+                            <Link className="header-nav-link ml">Розробка</Link>
+                            <Link className="header-nav-link">Контакти</Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         )
     }
 }
