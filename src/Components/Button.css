@@ -1,9 +1,9 @@
 .standart-btn{
-    background-color: #00adb5; 
+    background-color: #3282b8; 
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     color: white;
-    padding: 20px 45px;
+    padding: 20px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -11,5 +11,5 @@
 }
 
 .standart-btn:hover{
-    background-color: #393e46; 
+    background-color: #0f4c75; 
 }
