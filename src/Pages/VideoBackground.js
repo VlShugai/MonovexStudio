@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../Pages/Home.css";
+import "../Pages/VideoBackground.css";
 import titleVideo from "../Pages/video.mp4"
 import Button from '../Components/Button';
 
