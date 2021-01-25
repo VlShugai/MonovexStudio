@@ -24,6 +24,9 @@
     font-size: 75px;
     
 }
+.desc br{
+    display:none;
+}
 /* .background-title nobr{
     color: #bbe1fa;
 } */
@@ -38,7 +41,7 @@
     top: 50px;
     height: 100%;
     width: 100%;
- 
+    margin-top: 1%;
 }
 
 /* button */
@@ -52,7 +55,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-top: 10%;
+    margin-top: 15%;
 
 }
 .get-start-btn:hover{
@@ -87,6 +90,9 @@
 @media only screen and (max-width: 500px){
     .get-start-btn{
         margin-top: 50%;
+    }
+    .desc br{
+        display: inline;
     }
 
 }

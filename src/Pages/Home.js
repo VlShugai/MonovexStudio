@@ -18,7 +18,7 @@ export default class Home extends Component {
             </div>
             <div className="text-section">
                 <h1 className="background-title"><nobr >ПРОФЕСІЙНЕ</nobr> СТВОРЕННЯ <br/>САЙТІВ</h1>
-                <div className="desc">Ми не просто створюємо сайти, ми створюємо емоції.</div>
+                <div className="desc">Ми не просто створюємо сайти,<br/> ми створюємо емоції.</div>
                <button className="get-start-btn">Замовити</button>
             </div>
             
